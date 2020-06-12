@@ -16,9 +16,12 @@
     <script src="https://kit.fontawesome.com/c76a89b8a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- PAGE WRAPPER -->
     <div class="wrapper">
+        <!--BACKGROUND ELEMENTS-->
         <div class="top-bg"></div>
         <div class="tear-element"></div>
+        <!--HEADER-->
         <div class="header">
             <div class="header-container">
                 <a href="#home"><img src="/realEstate/images/a_logo_03.png" alt="Arda Agency"></a>
@@ -47,6 +50,7 @@
                  </div>
             </div>
         </div>
+        <!--HERO-->
         <div class="hero">
             <div class="hero-container">
                 <h3>Expert advice for discerning buyers</h3>
@@ -56,6 +60,7 @@
                 </div>
             </div>
         </div>
+        <!--REASONS PART-->
         <div class="why">
             <h3>Why Arda<br>Real Estate Consulting?</h3>
         </div>
@@ -110,10 +115,13 @@
                 </div>
             </div>
         </div>
+        <!--BACKGROUND ELEMENT-->
         <div class="mid-bg"></div>
+        <!--CONTACT BUTTON-->
         <div class="contactNow" id="scrollContact">
             <button type="button">Contact us now</button>
         </div>
+        <!--TESTIMONIALS PART-->
         <div class="testimonialH">
             <h3>Clients testimonial's</h3>
         </div>
@@ -157,8 +165,10 @@
                     <h5>Denver</h5>
                 </div>
         </div>
+        <!--BACKGROUND ELEMENT-->
         <div class="dq-decoration">
         </div>
+        <!--CONTACT FORM-->
         <div class="letUs">
             <div class="form-container">
                 <div class="part-form-container">
@@ -195,6 +205,7 @@
                 </div>
             </a>    
         </div>
+        <!--FOOTER-->
         <div class="top-footer">
             <div class="top-footer-container">
                 <div class="logo-clmn">
