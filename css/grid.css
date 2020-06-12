@@ -1,0 +1,347 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr 0.3fr 1fr 1fr 250px;
+    grid-template-rows: repeat(98, 60px); 
+}
+
+.top-bg , .tear-element , .mid-bg , .bot-bg{
+    grid-column: 1/ -1;
+}
+
+.header , .letUs , .top-footer , .bot-footer{
+    grid-column: 2 / -2;
+}
+
+.reason1 , .reason3 , .testimonial1 , .testimonial3 , .dq-decoration{
+    grid-column: 2 / span 2;
+}
+
+.reason2 , .reason4 , .testimonial2, .testimonial4{
+    grid-column: 5 / span 2;
+}
+
+.top-bg{
+    background-image: url('/realEstate/images/topbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    grid-row: 1 / span 17;
+    z-index: -1;
+    display: block;
+}
+
+.tear-element{
+    background-image: url('/realEstate/images/tearlayer_02.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    grid-row: 11 / span 34;
+    z-index: -2;
+    display: block;
+}
+
+.mid-bg{
+    background-image:url('/realEstate/images/interior_02.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    grid-row: 27 / span 30;
+    z-index: -3;
+    display: block;
+    opacity: 90%;
+}
+
+.bot-bg{
+    background-image: url('/realEstate/images/bottomGradient_02.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    grid-row: 80 / 99;
+    z-index: -1;
+}
+
+.header{
+    grid-row: 2 / span 1;
+}
+
+.hero{
+    grid-column: 2 / span 3;
+    grid-row: 5 / span 7;
+}
+
+.why{
+    grid-column: 3 / span 3;
+    grid-row: 18 / span 2;
+}
+
+.reason1{
+    grid-row: 22 / span 10;
+}
+
+.reason2{
+    grid-row: 22 / span 10;
+}
+
+.reason3{
+    grid-row: 33 / span 10;
+}
+
+.reason4{
+    grid-row: 33 / span 10;
+}
+
+.contactNow{
+    grid-column: 3 / span 3;
+    grid-row: 46 / span 2;
+}
+
+.testimonialH{
+    grid-column: 3 / span 3;
+    grid-row: 60 / span 2;
+
+}
+
+.testimonial1, .testimonial3{
+    grid-row: 64 / span 9;
+}
+
+.testimonial2, .testimonial4{
+    grid-row: 64 / span 9;
+}
+
+.dq-decoration{
+    grid-row: 71 / span 5;
+    background-image:url('/realEstate/images/doublequotes_03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    z-index: -3;
+    display: block;
+    opacity: 40%;
+}
+
+.letUs{
+    grid-row: 78 / span 13;
+}
+.map{
+    grid-column: 5 / -2;
+    grid-row: 79 / span 11;
+}
+
+.top-footer{
+    grid-row: 91 / span 6;
+}
+
+.bot-footer{
+    grid-row: 97 / span 2;
+}
+
+
+@media only screen and (min-width: 1240px) and (max-width: 1669px) {
+
+    .wrapper{
+        grid-template-columns: 150px 1fr 1fr 0.3fr 1fr 1fr 150px;
+        grid-template-rows: repeat(91, 60px); 
+    }
+
+    .letUs , .top-footer , .bot-footer{
+        grid-column: 2/ -2;
+    }
+
+    .testimonialH{
+        grid-row: 55 / span 2;
+    }
+    
+    .contactNow{
+        grid-row: 47 / span 2;
+    }
+
+    .testimonial1 , .testimonial2, .testimonial3, .testimonial4 {
+        grid-row: 60 / span 9
+    }
+    
+    .dq-decoration{
+        grid-row: 66 / span 5;
+    }
+
+    .letUs{
+        grid-row: 72 / span 13;
+    }
+    .map{
+        grid-column: 5 / -2;
+        grid-row: 73 / span 13;
+    }
+    
+    .top-footer{
+        grid-row: 85 / span 6;
+    }
+    
+    .bot-footer{
+        grid-row: 91 / span 2;
+    }
+
+    .bot-bg{
+        grid-row: 74 / span 19;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1239px) {
+
+    .wrapper{
+        grid-template-columns: 40px 1fr 1fr 0.3fr 1fr 1fr 40px;
+        grid-template-rows: repeat(75, 60px);  
+    }
+
+    .top-bg , .tear-element , .mid-bg  , .bot-bg , .dq-decoration{
+        background-size: contain;
+    }
+
+    .tear-element{
+        grid-row: 4 / span 20;
+    }
+
+    .mid-bg{
+        grid-row: 23 / 42;
+    }
+
+    .dq-decoration{
+        grid-row: 52/ span 5;
+    }
+
+    .header{
+        grid-row: 1 / span 2;
+    }
+
+    .why{
+        grid-row: 10 / span 2;
+    }
+
+    .reason1 , .reason2{
+        grid-row: 14 / span 7;
+    }
+    
+    .reason1 , .reason3{
+        grid-column: 2 / span 2;
+    }
+
+    .reason2 , .reason4{
+        grid-column: 5 / span 2;
+    }
+
+    .reason3 , .reason4 {
+        grid-row: 22 / span 7;
+    }
+    
+    .contactNow {
+        grid-row: 34 / span 2;
+    }
+
+    .testimonialH{
+        grid-row: 41 / span 2;
+    }
+
+    .testimonial1, .testimonial2, .testimonial3, .testimonial4{
+        grid-column: 1 / span 3;
+        grid-row: 46 / span 9
+    }
+    
+    .testimonial2, .testimonial4{
+        grid-column: 5 / span 3;
+    }
+
+    .letUs{
+        grid-row: 59/ span 13;
+        grid-column: 2 / -2;
+    }
+
+    .map{
+        grid-row: 58 / span 11;
+    }
+
+    .top-footer{
+        display: none;
+    }
+
+    .bot-footer{
+        grid-row: 75/ span 2;
+    }
+
+    .bot-bg{
+        background-size: cover;
+        grid-row: 60/ span 19;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .wrapper{
+        grid-template-columns: 20px 1fr 1fr 0.3fr 1fr 1fr 20px;
+        grid-template-rows: repeat(67, 60px);  
+    }
+
+    .dq-decoration , .hero , .reason1 , .reason2 , .reason3 , .reason4 , .testimonial1, .testimonial2 , .testimonial3 , .testimonial4 , .letUs {    
+        grid-column: 2 / -2;
+    }
+
+    .dq-decoration{
+        grid-row: 46 / span 5;
+    }
+
+    .bot-bg{
+        grid-row: 54 / span 19;
+    }
+
+    .header{
+        grid-row: 1 / span 2;
+    }
+
+    .hero{
+        grid-row: 4 / span 6;
+    }
+
+    .why{
+        grid-row: 16 / span 2;
+    }
+    
+    .reason-button{
+        grid-column: 6 / -1;
+        grid-row: 23 / span 3;
+    }
+
+    .reason1 , .reason2 , .reason3 , .reason4{
+        grid-row: 20 / span 8;
+    }
+
+    .contactNow{
+        grid-row: 31 / span 2;
+    }
+
+    .testimonialH{
+        grid-row: 36 / span 2;
+    }
+
+    .testimonial1, .testimonial2, .testimonial3, .testimonial4{
+        grid-row: 40 / span 7;
+    }
+
+    .letUs{
+        grid-row: 52 / span 12;
+    }
+
+    .bot-footer{
+        grid-row: 67/ span 2;
+    }
+
+}
